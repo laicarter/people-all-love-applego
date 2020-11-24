@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/kamigo/response_body', to: 'kamigo#show_response_body'
   post 'kamigo/webhook',to: 'kamigo#webhook'
   get '/kamigo/sent_request', to: 'kamigo#sent_request'
-  #get '/kamigo/show_group_data', to: 'kamigo#show_group_data'
-
+  get '/kamigo/show_group_data', to: 'kamigo#show_group_data'
+  get '/kamigo/sent_eip_request', to: 'kamigo#sent_eip_request'
 end
